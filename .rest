@@ -1,0 +1,170 @@
+@token = 7934f6d26853b82f852b4cf1b3be13a10760d284
+
+PUT https://www.gossipsbook.com/api/current-user/friend-request/list/update/kamal/?request=accepted
+Content-Type: application/json
+Authorization: Token b9abf713228941962f66e58efbb61eb243aad089
+
+###
+GET https://www.gossipsbook.com/api/room/
+Content-Type: application/json
+Authorization: Token 2435f499d49769c3caa67d5d1e8f2484ca3376f2
+
+###
+GET https://www.gossipsbook.com/api/notifications/
+Content-Type: application/json
+Authorization: Token 8d09d4835df813134dccf315272d183563f8fb61
+
+###
+GET https://www.gossipsbook.com/api/user/friend-suggestion/
+Content-Type: application/json 
+Authorization: Token 2435f499d49769c3caa67d5d1e8f2484ca3376f2
+
+###
+GET http://www.gossipsbook.com/api/gossips/update/farmers-protest-8170/
+Content-Type: application/json
+Authorization: Token 2435f499d49769c3caa67d5d1e8f2484ca3376f2
+
+###
+PUT https://www.gossipsbook.com/api/gossips/update/gossip_slug/?format=api
+Content-Type: application/json
+Authorization: Token b9abf713228941962f66e58efbb61eb243aad089
+
+### get feed
+GET https://www.gossipsbook.com/api/current-user/feed/
+Content-Type: application/json
+Authorization: Token {{token}}
+
+
+###
+POST https://www.gossipsbook.com/api/user/block/jenny/
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+GET https://www.gossipsbook.com/api/user/retrieve/jenny/
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+GET https://www.gossipsbook.com/api/gossips/update/merry-christmas-vodafone-auctioning-worlds-first-sms-expected-to-fetch-6831/
+Content-Type: application/json
+Authorization: Token {{token}}
+
+### get response types
+GET https://www.gossipsbook.com/api/photo_poll/response_types/
+Content-Type: application/json
+Authorization: Token {{token}}
+
+### add photo poll
+POST https://www.gossipsbook.com/api/photo_poll/
+Content-Type: application/json
+Authorization: Token {{token}}
+
+### get photo poll list
+GET https://www.gossipsbook.com/api/photo_poll?friend=ani&page=3
+Content-Type: application/json
+Authorization: Token {{token}}
+
+### get single photo poll
+GET https://www.gossipsbook.com/api/photo_poll/single_poll/6
+Content-Type: application/json
+Authorization: Token {{token}}
+
+### get poll comments
+GET https://www.gossipsbook.com/api/photo_poll/comments?pollphoto=12
+Authorization: Token {{token}}
+Content-Type: application/json
+
+### get gossip comments
+GET https://www.gossipsbook.com/api/gossips/grace-of-yoga-isha-foundation-1500/comment/list-create/
+Authorization: Token {{token}}
+Content-Type: application/json
+
+### new poll reaction
+POST https://www.gossipsbook.com/api/photo_poll/votes/
+Authorization: Token {{token}}
+Content-Type: application/json
+
+{
+    "pollphoto" : 6,
+    "isPhoto1" : false
+}
+
+### new poll reaction
+POST https://www.gossipsbook.com/api/photo_poll/comments/
+Authorization: Token {{token}}
+Content-Type: application/json
+
+{
+    "pollphoto" : 7,
+    "comment" : "some new comment"
+}
+
+### new reply
+POST https://www.gossipsbook.com/api/photo_poll/replies/
+Authorization: Token {{token}}
+Content-Type: application/json
+
+{
+    "comment" : 15,
+    "reply" : "this a reoky from post man"
+}
+
+### get replies
+GET https://www.gossipsbook.com/api/photo_poll/replies?comment=15
+Authorization: Token {{token}}
+Content-Type: application/json
+
+
+
+
+### delete comment
+POST https://www.gossipsbook.com/api/photo_poll/comment_delete/15/
+Authorization: Token {{token}}
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### delete reply
+POST https://www.gossipsbook.com/api/photo_poll/reply_delete/6
+Authorization: Token {{token}}
+Content-Type: application/json
